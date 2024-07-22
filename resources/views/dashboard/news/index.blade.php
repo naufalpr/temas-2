@@ -40,7 +40,6 @@
       </tbody>
     </table>
   </div>
-  <canvas class="my-4 w-100" id="myChart" width="900" height="395"></canvas>
   </div>
 
 @endsection
