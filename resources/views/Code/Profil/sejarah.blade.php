@@ -117,27 +117,10 @@
 
     <div class="container mt-5">
       <h1 class="mb-4">Legenda Asal Usul Kelurahan Temas</h1>
-      <p>
-        Perang antara Pangeran Diponegoro dengan kolonial Belanda (1825 – 1830) yang pertama kali terjadi di Tegalrejo, Yogjakarta akhirnya meluas hampir seluruh pulau Jawa yang sering disebut sebagai Perang Jawa. Inilah awal mula dapat
-        diceritakan sejarah Temas dan Mbah Bener.
-      </p>
-      <p>
-        Tertangkapnya pangeran Diponegoro tahun 1930 oleh pihak belanda yang sebelumnya dua pembantu setia Pangeran Diponegoro yaitu Sentot dan Kyai Mojo menyerahkan diri kepada pihak belanda, membuat sebagian pengikut/prajurit Pangeran
-        Diponegoro yang tidak mau tunduk kepada kolonial Belanda menyingkir ke daerah timur Kerajaan Yogyakarta yang waktu dulu disebut “Daerah Brang Wetan” (sebelah wetan/ Jawa Timur) secara bergelombang.
-      </p>
-      <p>
-        Dari sekian orang yang masih setia kepada Pangeran Diponegoro yang berhasil memasuki hutan – hutan Malang dan sekitarnya (utara Mojokerto) disebutlah nama Mbah Bener/Balender (Temas), Mbah Banter (Sisir), Mbah Ringin Anom, Mbah Mas
-        (Babatan), Mbah Bawok, Mbah Batu / Gubuk Angin / Abu Ghonaim (Banaran, Bumiaji), Imam Sujono (Gunung Kawi, Wonosari dan sebagainya, yang membuka hutan untuk dijadikan Desa Pertanahan serta untuk menyebarkan agama Islam.
-      </p>
-      <p>
-        Konon, Mbah Bener setelah bertapa memilih hutan dekat sungai Brantas yang berada di timur Hutan Sisir untuk dibuka menjadi Desa (dibedah Kerawang / Babat Alas). Dikala memasuki hutan / alas yang menyerupai gunung kecil Mbah Bener
-        menemukan pohon / wit “Temu” (sejenis laos, jahe dan sebagainya) yang mengeluarkan cahaya seperti Emas, sehingga Mbah Bener menyebutnya “Temu Emas” yang lama – kelamaan daerah itu disebut “Temas” yang berasal dari kata Temu Emas –
-        Temas.
-      </p>
-      <p>
-        Mbah Bener inilah yang dianggap masyarakat Temas sebagai leluhur yang berjasa besar membuka Desa Temas, sehingga sebagai rasa syukur kepada Allah SWT, setiap tahun masyarakat Temas selalu memperingati perjuangan Mbah Bener dengan
-        cara melakukan Selamatan Desa.
-      </p>
+      <img style="max-height: 500px; max-width:800px; overflow:hidden" src="{{ asset('storage/' . $sejarah->image) }}" alt="" class="image-fluid me-3">
+          <article class="my-3 fs-6">
+            <p>{!! $sejarah->body !!}</p>
+          </article>
     </div>
 
     <footer id="footer" class="mt-5">
@@ -149,9 +132,10 @@
               <div>
                 <h3>Temas</h3>
                 <p>
-                  Temas merupakan sebuah kelurahan di kota Batu
+                  Temas adalah sebuah kelurahan di Kecamatan Batu, Kota Batu, Provinsi Jawa Timur, Indonesia.
                   <br>
-                  <strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quo!</strong><br>
+                  <strong>Jalan Wukir No 709
+                  Kode Pos 65315</strong><br>
                 </p>
               </div>
             </div>
@@ -173,7 +157,7 @@
                 </div>
                 <div class="col-lg-10">
                   <h6>Email</h6>
-                  <p><a href="#" target="_blank">Temas</a></p>
+                  <p><a href="temassaetvdesa@gmail.com" target="_blank">temassaetvdesa@gmail.com</a></p>
                 </div>
               </div>
             </div>
