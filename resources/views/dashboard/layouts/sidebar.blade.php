@@ -12,11 +12,17 @@
               Dashboard
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link {{ Request::is('dashboard/news*') ? 'active' : '' }} d-flex align-items-center gap-2" href="/dashboard/news">
-              <svg class="bi"><use xlink:href="#file-earmark"/></svg>
-              Berita
-            </a>
+          <li class="nav-item dropdown">
+            <button class="btn dropdown-toggle fw-semibold" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Informasi Publik
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item nav-link {{ Request::is('dashboard/news*') ? 'active' : '' }} d-flex align-items-center gap-2" href="/dashboard/news">
+                    <svg class="bi"><use xlink:href="#file-earmark"/></svg>
+                    Berita" 
+                  </a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link {{ Request::is('dashboard/announcement*') ? 'active' : '' }} d-flex align-items-center gap-2" href="/dashboard/announcement">
