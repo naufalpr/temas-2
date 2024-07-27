@@ -7,6 +7,8 @@ use App\Http\Controllers\NewsController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DashboardSejarahController;
+use App\Http\Controllers\SejarahController;
 use App\Http\Controllers\DashboardNewsController;
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\DashboardAnnouncementController;
