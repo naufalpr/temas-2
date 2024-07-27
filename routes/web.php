@@ -101,6 +101,16 @@ Route::get('agenda', function () {
     return view('Code/informasiPublik/agenda');
 });
 
+Route::get('sejarah', [SejarahController::class, 'index']);
+
+Route::get('sejarah/{announcement:slug}', [SejarahController::class, 'show']);
+
+Route::get('/dashboard/sejarah/checkSlug', [
+    DashboardSejarahController::class, 'checkSlug'
+])->middleware('auth');
+
+Route::resource('/dashboard/sejarah', DashboardSejarahController::class)->middleware('auth');
+
 Route::get('pengumuman', [AnnouncementController::class, 'index']);
 
 Route::get('pengumuman/{announcement:slug}', [AnnouncementController::class, 'show']);
