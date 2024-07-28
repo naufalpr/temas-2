@@ -8,10 +8,10 @@ use App\Models\Sejarah;
 
 class SejarahController extends Controller
 {
-    public function show(Sejarah $sejarah) {
+    public function index(Sejarah $sejarah) {
         return view('Code/Profil/sejarah', [
-            "title" => "Single News",
-            "body" => $sejarah,
+            "title" => "Sejarah",
+            "sejarah" => $sejarah
         ]);
     }
 }
