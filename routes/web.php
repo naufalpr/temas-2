@@ -103,13 +103,7 @@ Route::get('agenda', function () {
     return view('Code/informasiPublik/agenda');
 });
 
-Route::get('sejarah', [SejarahController::class, 'index']);
-
-Route::get('sejarah/{announcement:slug}', [SejarahController::class, 'show']);
-
-Route::get('/dashboard/sejarah/checkSlug', [
-    DashboardSejarahController::class, 'checkSlug'
-])->middleware('auth');
+Route::get('sejarah', [SejarahController::class, 'show']);
 
 Route::resource('/dashboard/sejarah', DashboardSejarahController::class)->middleware('auth');
 
